@@ -54,7 +54,7 @@ Clientes en general en el area demografica que cumplen con lo requisitos para ca
 
 
 
-## UI
+## UI (https://www.figma.com/file/sGebkwDqgvfRFaIE9mSRlN/Dashboard_Ingresos?node-id=0%3A1)
 
 
 ![figma_registro](https://github.com/juliozm20/Launch-X-FrontEnd-Mision/blob/8eec64c0326f3a404ad11b5339354cea5f0840d1/5.%20UI/figma_registro.png)
