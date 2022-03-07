@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Pasteleria Goodies</title>
+</head>
+<body>
+    <header class="header">
+        
+        <div class="navbar flex flex-horizontal-center">            
+            <ul>
+                <li class="navitem"><a href="#Home">Home</a></li>
+                <li class="navitem"><a href="#Productos">Productos</a></li>
+                <li class="navitem"><a href="#Pedido">Pedido</a></li>
+                <li class="navitem"><a href="#Contacto">Contacto</a></li>
+                <li class="navitem"><a href="/pedidos.html">Lista de Pedidos</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="logo" id="Home">
+        <img src="/img/src/Pastelería Goodies-logos.jpeg" alt="" id="logotipo">
+    </div>
+    <div class="productos" id="Productos">
+        <div class="title">
+            <h1>Productos</h1>
+        </div>
+        <br>
+            <p>Disfruta de nuestra variedad de ricos sabores!</p>
+            <!-- El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno. -->
+                <div class="pasteles">
+                    <div class="pasteles-list">
+                        <ul>
+                            <li>
+                                <img src="/img/src/pastelVainilla.jfif" alt="" class="pastel_img">
+                                <p>Vainilla - $280</p>
+                            </li>
+                            <li>
+                                <img src="/img/src/pastelNuez.jfif" alt="" class="pastel_img">
+                               <p>Nuez - $320</p></li>
+                            <li>
+                                <img src="/img/src/pastelMango.jfif" alt="" class="pastel_img">
+                               <p>Mango - $340</p> </li>
+                            <li>
+                                <img src="/img/src/pastelFresa.jfif" alt="" class="pastel_img">
+                               <p>Fresa -$340</p> </li>
+                            <li>
+                                <img src="/img/src/pastelChocolate.jfif" alt="" class="pastel_img">
+                                <p>Chocolate $300</p> </li>
+                            <li>
+                                <img src="/img/src/pastelFrutas.jfif" alt="" class="pastel_img">
+                                <p>Frutas $360</p> </li>
+                        </ul>
+                    </div>
+        </div>
+    </div>
+
+    <br>
+<!-- El cliente de la pastelería necesita ver los diferentes adornos con los que se puede decorar el pastel y los precios de cada uno. -->
+<div class="adornos">
+    <h2>Adornos</h2>
+    <div class="adornos-list">
+        <ul>
+            <li>
+                <img src="/img/src/adornoNumero.jfif" alt="" class="adorno_img">
+                <p>Texto - Numeros - $80</p>
+            </li>
+            <li>
+                <img src="/img/src/adornoDibujo.jfif" alt="" class="adorno_img">
+             <p>Dibujo - $100</p>
+            </li>
+            <li>
+                <img src="/img/src/adornoEstrellas.jfif" alt="" class="adorno_img">
+               <p>Estrellas - $20 c/u</p> 
+            </li>
+            <li>
+            <img src="/img/src/adornoGlobo.jfif" alt="" class="adorno_img">
+               <p>Globos - $20 c/u</p>
+            </li>
+            <li>
+                <img src="/img/src/adornoCust.jfif" alt="" class="adorno_img">
+               <p>Personalizado - precio varia el tamaño</p>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<br>
+
+<!-- El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias. -->
+<div class="combinado">
+    <h2>Sabores Combinados</h2>
+    <p>Puedes agregar una combinacion extra por el sabor original elegido. Estos son las combinaciones actuales</p>
+    <ul class="combo">
+        <li>Vainilla - Chocolate - $320</li>
+        <li>Vainilla - Fresa - $340</li>
+        <li>Fresa - Chocolate - $360</li>
+        <li>Mango - Fresa - $380</li>
+    </ul>
+    
+    <!-- El cliente de la pastelería tendrá la posibilidad de combinar adornos dependiendo de sus preferencias. -->
+    <h2>Adornos Combinados</h2>
+    Puedes agegar una variedad de adornos personalizados a tu pastel
+</div>
+
+
+<!-- El cliente de la pastelería necesita poner en un formulario su pedido. -->
+<!-- El formulario debe de contener los datos de contacto del cliente que son Nombre, Teléfono, Correo Electrónico, Descripción general del pastel y la selección de sabores y adornos. -->
+<br>
+<div class="form" id="Pedido">
+    <h2>Realiza un pedido</h2>
+    <div class="pedido">
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" placeholder="Apellido">
+            <label for="telefono">Telefono</label>
+            <input type="number" id="telefono" placeholder="Telefono">
+            <label for="correo">Correo electronico</label>
+            <input type="email" id="correo" placeholder="Correo Electronico">
+            <label for="pastel">Pastel</label>
+            <select name="pastel" id="pastel">
+                <option value="vainilla">Vainilla</option>
+                <option value="nuez">Nuez</option>
+                <option value="mango">Mango</option>
+                <option value="fresa">Fresa</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="frutas">Frutas</option>
+            </select>    
+            <label for="size">Size</label>
+            <select name="size" id="size">
+                <option value="chico">Chico</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+            </select>
+            <label for="scombinado">Sabor combinado</label>
+            <select name="scombinado" id="scombinado">
+                <option value="svainilla">Vainilla</option>
+                <option value="snuez">Nuez</option>
+                <option value="smango">Mango</option>
+                <option value="sfresa">Fresa</option>
+                <option value="schocolate">Chocolate</option>
+            </select> 
+            <label for="adorno">Adorno</label>
+            <select name="adorno" id="adorno">
+                <option value="texto">Texto y/o numeros</option>
+                <option value="dibujo">Dibujo</option>
+                <option value="logo">Logo</option>
+                <option value="estrellas">Estrellas</option>
+                <option value="globos">Globos</option>
+                <option value="acustomizado">Adorno customizado</option>
+            </select>
+            <label for="adornoc">Adorno combinado</label>
+            <select name="adornoc" id="adornoc">
+                <option value="textoc">Texto y/o numeros</option>
+                <option value="dibujoc">Dibujo</option>
+                <option value="logoc">Logo</option>
+                <option value="estrellasc">Estrellas</option>
+                <option value="globosc">Globos</option>
+                <option value="acustomizadoc">Adorno personalizado</option>
+            </select>
+            <input type="submit" value="Pedir">
+        </form>
+    </div>
+</div>
+
+<!-- La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención. -->
+<br>
+<div class="contacto" id="Contacto">
+    <h2>Contacto</h2>
+    <p>Direccion: Rio 123 Col. Centro 66700, Monterrey, NL</p>
+    <p>Telefono: 811-111-1111</p>
+    <p>Horario de Atencion: Lunes a Viernes: 10 am - 8 pm. Sabado: 10 am - 4 pm</p>
+</div>
+<br>
+<footer>
+   <p>Pasteleria Goodies © 2022</p> 
+</footer>
+</body>
+</html>
+
+<!-- El pastelero necesita tener la información de la cantidad de sabores que le quedan para hacer los pasteles.
+El pastelero necesita tener la información de la cantidad de adornos que le quedan para hacer los pasteles.
+El pastelero necesita una tabla donde aparezcan los pedidos que se han realizado con los datos del formulario. -->
