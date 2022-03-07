@@ -1,4 +1,4 @@
-URL de Pasteleria Goodies: https://pasteleriagoodies.vercel.app/pedidos.html
+URL de Pasteleria Goodies: https://pasteleriagoodies.vercel.app
 
 ## **Caso: Pastelería**
 <br>
