@@ -1,0 +1,438 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+}
+
+/* material.io icons from https://fonts.google.com/icons?selected=Material+Icons */
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+#logo {
+  margin-right: auto;
+  color: #2848c6;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
+}
+
+li {
+  list-style: none;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header a {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  color: #6d7b93;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #2848c6;
+}
+
+.btn {
+  padding: 20px 50px;
+  background-color: #3656d4;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: lightgray;
+}
+
+.main {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 52px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1f3e72;
+}
+
+p {
+  font-size: 24px;
+  color: #6d7b93;
+}
+
+.material-icons.yellow {
+  color: #ffd012;
+}
+.main-list {
+  color: #3656d4;
+  margin-right: 30px;
+}
+
+.main-img {
+  height: 900px;
+  width: 100%;
+}
+
+/* ---home--- */
+
+.home {
+  display: flex;
+  position: relative;
+}
+
+.home-left {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  padding: 20px 120px;
+  width: 50%;
+  float: left;
+}
+
+.home-right {
+  width: 50%;
+  float: right;
+  position: relative;
+}
+
+.home li {
+  display: inline-block;
+}
+
+.material-icons.blue {
+  color: #3656d4;
+}
+
+.desc {
+  margin-bottom: 40px;
+}
+
+.span {
+  display: flex;
+}
+
+.main-schedule {
+  margin-top: 120px;
+}
+
+.modal-content {
+  display: flex;
+}
+
+.modal-content li {
+  margin: 0 56px;
+}
+
+.modal-content input {
+  margin: 35px 0;
+}
+
+.vacc-modal {
+  background-color: white;
+  display: flex;
+  box-shadow: 0 1px 8px #ddd;
+  position: absolute;
+  z-index: 1;
+  margin-top: -180px;
+  margin-left: 58px;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+.brand {
+  opacity: 0.15;
+  height: 100px;
+  width: 300px;
+}
+.astra {
+  margin-bottom: 35px;
+}
+
+/* ---reason--- */
+
+.section-content {
+  display: flex;
+  margin-right: auto;
+  padding: 20px 120px;
+  /* float: left; */
+  margin-top: 30px;
+  /* position: relative; */
+}
+
+.reason {
+  width: 50%;
+  display: block;
+}
+
+.reason-list ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reason-list ul li {
+  margin: 100px 20px;
+  padding: 20px;
+}
+
+.reason-list ul li:hover {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: lightgray;
+}
+
+.material-icons.medium-icon-blue {
+  color: #2848c6;
+  font-size: 36px;
+}
+
+.p-smaller {
+  font-size: 18px;
+}
+
+/* ---preparation--- */
+
+.preparation {
+  display: flex;
+  position: relative;
+}
+
+.prep-section-right-main {
+  width: 50%;
+  float: right;
+  padding: 0 60px 0 0;
+}
+
+.prep-section-content {
+  width: 100%;
+}
+
+.prep-section-left {
+  display: flex;
+  margin-right: auto;
+  width: 50%;
+  float: left;
+  z-index: 1;
+  margin-left: -60px;
+}
+
+.prep-section-right {
+  width: 50%;
+  float: right;
+}
+
+.prep-section-right ul li {
+  margin-bottom: 50px;
+}
+
+.box {
+  height: 363px;
+  width: 630px;
+  background-color: #3656d4;
+  margin-top: 276px;
+}
+
+.section-img {
+  height: 600px;
+  width: 600px;
+  margin-top: 139px;
+}
+
+/* ---contact--- */
+
+.contact {
+  display: flex;
+  margin-top: 100px;
+}
+
+.contact-left {
+  padding: 20px 120px;
+  width: 55%;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: 30px 30px;
+  grid-template-rows: 30px 30px;
+  gap: 245px;
+  height: 490px;
+  justify-content: end;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 50%;
+}
+
+.card-call {
+  width: 250px;
+  height: 180px;
+  padding: 30px;
+  margin-bottom: 12px;
+}
+
+.call-icon {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.contact-title {
+  display: inline-block;
+}
+
+.contact-data {
+  font-size: small;
+  font-weight: 600;
+  padding-left: 55px;
+  margin-top: -10px;
+  margin-bottom: 50px;
+}
+
+.call-submit {
+  display: grid;
+  place-items: center;
+}
+
+.contact-btn {
+  padding: 20px 50px;
+  border: none;
+  background: none;
+  color: #3656d4;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  padding: 20px 50px;
+  background-color: #3656d4;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-right {
+  width: 50%;
+  float: right;
+}
+
+.contact-img {
+  height: 600px;
+  width: 600px;
+  float: right;
+  margin-top: 200px;
+}
+
+.contact-data {
+  font-size: 1em;
+}
+
+/* footer */
+
+footer {
+  padding: 5px;
+  margin-top: 90px;
+  width: 100%;
+}
+
+.footer-sections {
+  background-color: #0047cb25;
+}
+
+.footer-title {
+  padding: 0 120px;
+}
+
+.sections-up--info {
+  display: flex;
+  padding: 30px;
+  height: 140px;
+}
+
+.up-info--one {
+  width: 33%;
+}
+.up-info--two {
+  width: 33%;
+}
+
+.sections-up--info p {
+  font-size: small;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.info-three-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.footer-about,
+.footer-company,
+.footer-support {
+  width: 170px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.footer-sections-down {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-sections-down p {
+  font-size: small;
+  font-weight: 500;
+}
+
+.copyright {
+  margin-right: 300px;
+}
