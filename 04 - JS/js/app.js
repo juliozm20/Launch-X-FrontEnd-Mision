@@ -39,9 +39,8 @@ const fetchPokemon = () => {
       for (let i = 0; i < data.types.length; i++) {
         eachType.push(typeColor[data.types[i]["type"]["name"]]);
       }
-      console.log("each", typeColor[eachType]);
-      const themeColor = typeColor[data.types[0].type.name]; //set themecolor based on pokemon type
-      let nameType = [];
+
+      let nameType = []; //set themecolor based on pokemon type
       for (let i = 0; i < data.types.length; i++) {
         nameType.push(data.types[i]["type"]["name"]);
       }
@@ -53,7 +52,6 @@ const fetchPokemon = () => {
 };
 
 const getTypes = (types) => {
-  console.log("types", types);
   let selectedType = document.querySelector("#pokemon-types");
   while (selectedType.firstChild) {
     selectedType.firstChild.remove();
@@ -105,6 +103,7 @@ const loadList = async (num) => {
   let pkmAtk = pkm["stats"][1]["base_stat"];
   let pkmDef = pkm["stats"][2]["base_stat"];
   let pkmSpd = pkm["stats"][5]["base_stat"];
+  let pkmMoves = pkm["moves"];
   pokedex[num] = {
     hp: pkmHp,
     name: pkmName,
@@ -113,6 +112,7 @@ const loadList = async (num) => {
     atk: pkmAtk,
     def: pkmDef,
     spd: pkmSpd,
+    moves: pkmMoves,
   };
 };
 
@@ -146,9 +146,18 @@ function seePkmInfo() {
     eachType.push(typeColor[types[i]["type"]["name"]]);
   }
 
-  const themeColor = typeColor[types[0].type.name];
-  // console.log(themeColor);
   styleCard(eachType);
+
+  let movesDiv = document.querySelector("#pokemon-moves");
+  while (movesDiv.firstChild) {
+    movesDiv.firstChild.remove();
+  }
+  let moves = pokedex[this.id]["moves"];
+  for (let i = 0; i < moves.length; i++) {
+    let move = document.createElement("div");
+    move.innerText = moves[i]["move"]["name"];
+    movesDiv.append(move);
+  }
 }
 
 // color per type
@@ -178,9 +187,5 @@ const styleCard = (color) => {
   let cardColor = card.querySelectorAll(".pokemon-types span");
   for (let i = 0; i < cardColor.length; i++) {
     cardColor[i].style.backgroundColor = color[i];
-    console.log(cardColor);
   }
-  // card.querySelectorAll(".pokemon-types span").forEach((typeColor) => {
-  //   typeColor.style.backgroundColor = color[typeColor];
-  // });
 };
