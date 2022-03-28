@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("../src/img/wallpaper.png");
+  background-size: cover;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 0 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+#pokeInput {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.poke-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search {
+  cursor: pointer;
+  padding: 15px 40px;
+  font-size: 18px;
+  background-color: #101010;
+  color: #fff;
+  position: relative;
+  margin: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+#search:hover {
+  transition: box-shadow 0.1s ease-in-out;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  color: #d9d9d9;
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-contents {
+  display: flex;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+#card {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+#card img {
+  display: block;
+  width: 180px;
+  max-height: 200px;
+  position: relative;
+  margin: 20px;
+}
+
+.pkm-img {
+  display: flex;
+  justify-content: center;
+}
+
+.hp {
+  width: 80px;
+  background-color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
+  margin-left: auto;
+  font-weight: 400;
+}
+
+.poke-name {
+  text-align: center;
+  font-weight: 600;
+}
+
+.pokemon-types {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 40px 0;
+}
+
+.pokemon-types span {
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.hp,
+.type-box {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+
+.pokemon-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.pokemon-stats p {
+  color: #404060;
+}
+
+.moves-title {
+  margin-top: 20px;
+}
+
+#pokemon-moves {
+  height: 100px;
+  font-size: 12px;
+  overflow-y: auto;
+  font-size: 16px;
+}
+
+/*
+colors
+*/
+
+.type-box .normal {
+  background-color: "#95afc0";
+}
+
+.type-box .flying {
+  background-color: "#81ecec";
+}
+
+/*
+list
+*/
+#list {
+  width: 250px;
+  height: 600px;
+  background-color: #d9d9d9;
+  font-size: 18px;
+  overflow-y: auto;
+}
+
+.pokemon-name {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+/*
+Media Queries
+*/
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+  #card {
+    width: 230px;
+    height: 500px;
+  }
+  .poke-name {
+    margin-top: -30px;
+  }
+  .pokemon-types {
+    margin-top: 15px;
+  }
+  .pokemon-stats {
+    margin-top: -20px;
+  }
+  .moves-title {
+    margin-top: 10px;
+  }
+  #pokemon-moves {
+    height: 60px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  #list {
+    width: 230px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 20px;
+  }
+  #pokeInput {
+    padding: 7px 0 7px 0;
+    margin-left: 50px;
+  }
+  #search {
+    padding: 11px 34px;
+  }
+  #card {
+    width: 200px;
+    height: 500px;
+  }
+  #pokemon-moves {
+    font-size: 12px;
+  }
+  #list {
+    width: 200px;
+    height: 500px;
+    font-size: 16px;
+  }
+  .pokemon-types span {
+    padding: 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  #pokeInput {
+    padding: 7px 0 7px 0;
+    font-size: 18px;
+    margin-left: 50px;
+  }
+  #search {
+    padding: 11px 20px;
+    margin-right: 50px;
+  }
+  #card {
+    width: 180px;
+    height: 500px;
+    padding: 30px 20px;
+  }
+  .pokemon-stats p {
+    font-size: 11px;
+  }
+  #pokemon-moves {
+    font-size: 11px;
+  }
+  #list {
+    width: 180px;
+    height: 500px;
+    font-size: 14px;
+  }
+  h3,
+  p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 16px;
+  }
+  #pokeInput {
+    padding: 4px 0 4px 0;
+    font-size: 14px;
+    margin-left: 50px;
+  }
+  #search {
+    padding: 11px 12px;
+    margin-right: 60px;
+  }
+  #card {
+    width: 160px;
+    height: 500px;
+    padding: 25px 15px;
+  }
+  #list {
+    width: 160px;
+    height: 500px;
+    background-color: #d9d9d9;
+    font-size: 12px;
+    overflow-y: auto;
+  }
+}
